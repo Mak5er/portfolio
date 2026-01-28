@@ -12,7 +12,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   const text = `
-📩 New Contact Message
+📩 New Contact Message from mak5er | Portfolio
 
 👤 Name: ${name}
 📧 Email: ${email}
