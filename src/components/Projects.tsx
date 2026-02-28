@@ -67,7 +67,7 @@ const Projects = () => {
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {portfolioConfig.projects.map((project) => (
-            <motion.div
+            <motion.article
               key={project.id}
               variants={cardVariants}
               className="bg-secondary border border-border rounded-lg overflow-hidden group hover:border-accent-blue flex flex-col"
@@ -75,7 +75,10 @@ const Projects = () => {
               <div className="relative overflow-hidden h-52 sm:h-64">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={`${project.title} project preview`}
+                  loading="lazy"
+                  decoding="async"
+                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />
@@ -108,21 +111,22 @@ const Projects = () => {
                 </p>
 
                 <div className="flex flex-wrap items-center justify-between gap-4 mt-auto w-full">
-                  <div className="flex flex-wrap gap-2">
+                  <ul className="flex flex-wrap gap-2" aria-label={`${project.title} technologies`}>
                     {project.technologies.map((tech: string) => (
-                      <span
+                      <li
                         key={tech}
                         className="px-3 py-1 bg-background text-text-secondary text-sm font-mono rounded border border-border"
                       >
                         {tech}
-                      </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                   <div className="flex gap-4">
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`${project.title} source code on GitHub`}
                       className="flex items-center gap-2 text-text-secondary hover:text-accent-blue transition-colors duration-300"
                     >
                       <Github size={20} />
@@ -133,6 +137,7 @@ const Projects = () => {
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`${project.title} live demo`}
                         className="flex items-center gap-2 text-text-secondary hover:text-accent-blue transition-colors duration-300"
                       >
                         <ExternalLink size={20} />
@@ -142,7 +147,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </motion.div>
       </div>

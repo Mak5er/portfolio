@@ -45,7 +45,11 @@ const Hero = () => {
   ];
 
   return (
-    <section className="min-h-[calc(var(--vh,1vh)*100)] flex items-center justify-center px-6 py-20 relative">
+    <section
+      id="home"
+      className="min-h-[calc(var(--vh,1vh)*100)] flex items-center justify-center px-6 py-20 relative"
+      aria-label="Introduction"
+    >
       <motion.div
         className="max-w-5xl w-full"
         variants={containerVariants}
@@ -84,6 +88,14 @@ const Hero = () => {
           className="text-base md:text-lg text-text-secondary mb-12 max-w-2xl leading-relaxed"
         >
           {portfolioConfig.bio}
+        </motion.p>
+
+        <motion.p
+          variants={itemVariants}
+          className="text-sm md:text-base text-text-secondary/90 mb-12 max-w-3xl leading-relaxed"
+        >
+          I build portfolio websites, full-stack web apps, Telegram bots and automation tools
+          with React, TypeScript, Python, Node.js and Docker.
         </motion.p>
 
         <motion.div

@@ -1,9 +1,9 @@
 {
   "personal": {
     "name": "mak5er",
-    "title": "Developer",
-    "subtitle": "Learning and building cool stuff",
-    "bio": "Developer with 3+ years of experience. Learning Python, TypeScript, Docker and many other technologies. Always learning, always growing."
+    "title": "Full-Stack Developer",
+    "subtitle": "Building React, TypeScript, Python and Telegram bot projects",
+    "bio": "Full-stack developer with 3+ years of experience building web applications, Telegram bots and software projects with React, TypeScript, Python, Node.js and Docker."
   },
   "contact": {
     "email": "mmaksym.reva@gmail.com",
@@ -130,7 +130,7 @@
     {
       "id": 1,
       "title": "Downloader Bot",
-      "description": "Social media downloader Bot on Telegram.",
+      "description": "Telegram bot for downloading media from social platforms, built with Python, Aiogram and Docker.",
       "technologies": [
         "Aiogram",
         "Python",
@@ -145,7 +145,7 @@
     {
       "id": 2,
       "title": "z0music",
-      "description": "YT music downloader Bot on Telegram.",
+      "description": "Telegram music downloader bot focused on YouTube audio delivery with yt-dlp, Python and Docker.",
       "technologies": [
         "Aiogram",
         "yt-dlp",
@@ -154,14 +154,14 @@
       ],
       "status": "Active",
       "github": "https://github.com/z0team/z0music",
-      "demo": "hhttps://t.me/z0MusicBot",
+      "demo": "https://t.me/z0MusicBot",
       "image": "https://socialify.git.ci/z0team/z0music/image?forks=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F82%2FTelegram_logo.svg&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark",
       "featured": false
     },
     {
       "id": 3,
       "title": "Layout Changer",
-      "description": "A web application to easily switch between English QWERTY and Ukrainian YCUKEN keyboard layouts. ",
+      "description": "Web application for converting text between English QWERTY and Ukrainian YCUKEN keyboard layouts.",
       "technologies": [
         "React",
         "JavaScript",
@@ -179,19 +179,19 @@
       "year": "2025 - Present",
       "title": "Developer",
       "company": "Freelance / Personal Projects",
-      "description": "Working on development projects, learning new technologies and building cool stuff."
+      "description": "Building freelance and personal software projects with a focus on web development, automation and developer tooling."
     },
     {
       "year": "2024 - 2025",
       "title": "Learning & First Projects",
       "company": "Freelance / Self-taught",
-      "description": "First steps in freelance. Worked on first freelance projects."
+      "description": "Started taking freelance work and shipping first real-world projects while improving frontend and backend development skills."
     },
     {
       "year": "2023 - 2024",
       "title": "Learning & Building",
       "company": "Self-taught",
-      "description": "Started my way in development. Learned Python, JavaScript, React, and other technologies."
+      "description": "Started the journey in software development, learning Python, JavaScript, React and core full-stack engineering fundamentals."
     }
   ]
 }
