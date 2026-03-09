@@ -33,9 +33,14 @@
             "link": "https://github.com/z0team/z0music",
             "status": "Active"
           },
+         {
+            "name": "LinkSky",
+            "link": "https://github.com/z0team/LinkSky",
+            "status": "Active"
+          },
           {
             "name": "z0team",
-            "link": "https://github.com/",
+            "link": "https://github.com/z0team",
             "status": "In Development"
           }
         ]
@@ -157,9 +162,25 @@
       "demo": "https://t.me/z0MusicBot",
       "image": "https://socialify.git.ci/z0team/z0music/image?forks=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F82%2FTelegram_logo.svg&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark",
       "featured": false
-    },
+    },    
     {
       "id": 3,
+      "title": "LinkSky",
+      "description": "Web application for creating personalized landing pages with links to social media profiles.",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "PostgreSQL"
+      ],
+      "status": "Active",
+      "github": "https://github.com/z0team/LinkSky",
+      "demo": "https://linksky.qzz.io",
+      "image": "https://socialify.git.ci/z0team/LinkSky/image?forks=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F82%2FTelegram_logo.svg&name=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark",
+      "featured": false
+    },
+    {
+      "id": 4,
       "title": "Layout Changer",
       "description": "Web application for converting text between English QWERTY and Ukrainian YCUKEN keyboard layouts.",
       "technologies": [
