@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1f1f1f"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+  <rect width="1200" height="630" fill="url(#fade)"/>
+
+  <g font-family="JetBrains Mono, ui-monospace, monospace" fill="#e5e5e5">
+    <text x="80" y="120" font-size="22" fill="#7a7a7a">// portfolio · 2026</text>
+
+    <g transform="translate(80, 240)">
+      <text font-size="56" fill="#7a7a7a">$</text>
+      <text x="60" font-size="56" font-weight="700">whoami</text>
+    </g>
+
+    <text x="80" y="360" font-size="120" font-weight="700" letter-spacing="-2">mak5er<tspan fill="#7a7a7a">.</tspan></text>
+
+    <text x="80" y="430" font-size="32" fill="#cccccc">full-stack developer · react · typescript · python</text>
+
+    <g transform="translate(80, 540)" font-size="20" fill="#a0a0a0">
+      <rect width="10" height="10" y="-10" fill="#22c55e"/>
+      <text x="22">available for work</text>
+      <text x="240" fill="#5a5a5a">·</text>
+      <text x="260">github.com/mak5er</text>
+      <text x="540" fill="#5a5a5a">·</text>
+      <text x="560">@mak5er</text>
+    </g>
+
+    <text x="1080" y="120" font-size="22" fill="#5a5a5a" text-anchor="end">~/</text>
+    <text x="1120" y="540" font-size="22" fill="#5a5a5a" text-anchor="end">v1.0</text>
+  </g>
+
+  <rect x="80" y="555" width="1040" height="1" fill="#1f1f1f"/>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "name": "mak5er — full-stack developer",
+  "short_name": "mak5er",
+  "description": "Personal portfolio of mak5er — full-stack developer.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "lang": "en",
+  "categories": ["portfolio", "developer", "personal"],
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-touch-icon.svg", "sizes": "180x180", "type": "image/svg+xml" }
+  ]
+}
