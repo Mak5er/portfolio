@@ -9,6 +9,7 @@ import { Projects } from '@/components/Projects';
 import { Rig } from '@/components/Rig';
 import { Skills } from '@/components/Skills';
 import { CommandPalette } from '@/components/CommandPalette';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <SpeedInsights />
     </div>
   );
 }
