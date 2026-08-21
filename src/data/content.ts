@@ -60,6 +60,7 @@ export const skills: Skill[] = [
   { name: 'Python', category: 'language', level: 90 },
   { name: 'TypeScript', category: 'language', level: 85 },
   { name: 'JavaScript', category: 'language', level: 88 },
+  { name: 'Swift', category: 'language', level: 60 },
   { name: 'React', category: 'frontend', level: 88 },
   { name: 'Tailwind CSS', category: 'frontend', level: 85 },
   { name: 'Vite', category: 'frontend', level: 80 },
@@ -77,57 +78,33 @@ export const skills: Skill[] = [
   { name: 'Git', category: 'tools', level: 88 },
   { name: 'Bash', category: 'tools', level: 70 },
   { name: 'Powershell', category: 'tools', level: 65 },
-  { name: 'Swift', category: 'language', level: 60 },
 ];
 
 export const github = {
   primaryUser: 'mak5er',
-  sources: ['mak5er', 'z0team'],
+  sources: ['mak5er'],
   // Repos to surface as featured cards in projects, in this exact order.
   featuredRepos: [
-    'mak5er/portfolio-v2',
     'mak5er/Downloader-Bot',
-    'z0team/z0music',
-    'z0team/LinkSky',
-    'mak5er/layout-changer',
+    'mak5er/Pocket-Poster',
   ],
   // Demo / live links keyed by full_name (lowercased).
   demoLinks: {
-    'mak5er/portfolio-v2': 'https://www.mak5er.com',
     'mak5er/downloader-bot': 'https://t.me/MaxLoadBot',
-    'z0team/z0music': 'https://t.me/z0MusicBot',
-    'z0team/linksky': 'https://linksky.qzz.io',
-    'mak5er/layout-changer': 'https://layout.mak5er.com/',
+    'mak5er/pocket-poster': 'https://github.com/Mak5er/Pocket-Poster',
   } as Record<string, string>,
   // Optional description override per repo (full_name lowercased).
   descriptionOverrides: {
-    'mak5er/portfolio-v2':
-      'Portfolio website v2 with terminal aesthetic, command palette, and perfect Lighthouse scores. Built with React, TypeScript, Vite, and Tailwind CSS.',
     'mak5er/downloader-bot':
       'Telegram bot for downloading media from social platforms. Built around aiogram + yt-dlp, deployed in Docker.',
-    'z0team/z0music':
-      'Telegram music downloader bot focused on YouTube audio delivery via yt-dlp.',
-    'z0team/linksky':
-      'Web app for personalized landing pages with links to social profiles.',
-    'mak5er/layout-changer':
-      'Web tool for converting text between English QWERTY and Ukrainian YCUKEN layouts.',
+    'mak5er/pocket-poster':
+      'Custom PosterBoard Wallpapers for iOS 26-27. Create beautiful personalized wallpapers for your iPhone.',
   } as Record<string, string>,
 };
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Portfolio v2',
-    description:
-      'Portfolio website with terminal aesthetic, command palette (Cmd+K), and perfect Lighthouse scores. Progressive Web App with offline support.',
-    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'PWA'],
-    status: 'Active',
-    github: 'https://github.com/Mak5er/portfolio-v2',
-    demo: 'https://www.mak5er.com',
-    featured: true,
-  },
-  {
-    id: 2,
     title: 'Downloader Bot',
     description:
       'Telegram bot for downloading media from social platforms. Handles a lot of sources, deployed in Docker.',
@@ -138,57 +115,27 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    id: 2,
+    title: 'Pocket Poster',
+    description:
+      'Custom PosterBoard Wallpapers for iOS 26-27.0b4. Create beautiful personalized wallpapers with ease.',
+    technologies: ['Swift', 'iOS'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/Pocket-Poster',
+    featured: true,
+  },
+  {
     id: 3,
-    title: 'z0music',
-    description:
-      'Telegram music downloader bot focused on YouTube audio delivery. Built around yt-dlp and aiogram.',
-    technologies: ['Python', 'Aiogram', 'yt-dlp', 'Docker'],
-    status: 'Active',
-    github: 'https://github.com/z0team/z0music',
-    demo: 'https://t.me/z0MusicBot',
-    featured: true,
-  },
-  {
-    id: 4,
-    title: 'LinkSky',
-    description:
-      'Web app for personalized landing pages with links to social media profiles. Multi-tenant, themable.',
-    technologies: ['Next.js', 'TypeScript', 'React', 'PostgreSQL'],
-    status: 'Active',
-    github: 'https://github.com/z0team/LinkSky',
-    demo: 'https://linksky.qzz.io',
-    featured: true,
-  },
-  {
-    id: 5,
     title: 'Layout Changer',
     description:
       'Web tool for converting text between English QWERTY and Ukrainian YCUKEN keyboard layouts.',
-    technologies: ['React', 'JavaScript', 'MUI'],
+    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
     status: 'Active',
     github: 'https://github.com/Mak5er/layout-changer',
     demo: 'https://layout.mak5er.com/',
   },
   {
-    id: 6,
-    title: 'AiblushiBot',
-    description:
-      'Telegram bot designed to help manage dehydration processes, track working sessions, and generate reports for small business operations.',
-    technologies: ['Python', 'Aiogram', 'SQLite'],
-    status: 'Active',
-    github: 'https://github.com/Mak5er/AiblushiBot',
-  },
-  {
-    id: 7,
-    title: 'Pocket Poster',
-    description:
-      'Custom PosterBoard Wallpapers for iOS 26-27.0b4. iOS app for creating and managing custom wallpapers.',
-    technologies: ['Swift', 'iOS'],
-    status: 'Active',
-    github: 'https://github.com/Mak5er/Pocket-Poster',
-  },
-  {
-    id: 8,
+    id: 4,
     title: 'Anekdoty',
     description:
       'Jokes website built with ReactJS and FastAPI. Collection of funny jokes with a clean modern interface.',
@@ -197,7 +144,16 @@ export const projects: Project[] = [
     github: 'https://github.com/Mak5er/anekdoty',
   },
   {
-    id: 9,
+    id: 5,
+    title: 'AiblushiBot',
+    description:
+      'Telegram bot designed to help manage dehydration processes, track working sessions, and generate reports.',
+    technologies: ['Python', 'Aiogram', 'SQLite'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/AiblushiBot',
+  },
+  {
+    id: 6,
     title: 'Multi-Bot',
     description:
       'Multitool Bot in Telegram with various utilities and features for productivity.',
@@ -206,13 +162,40 @@ export const projects: Project[] = [
     github: 'https://github.com/Mak5er/Multi-Bot',
   },
   {
-    id: 10,
+    id: 7,
     title: 'EmojiEncode',
     description:
-      'Hide a message in an emoji! This bot allows you to encode a hidden message into an emoji.',
+      'Hide a message in an emoji! Encode a hidden message into an emoji for fun and creative purposes.',
     technologies: ['Python', 'Aiogram'],
     status: 'Active',
     github: 'https://github.com/Mak5er/EmojiEncode',
+  },
+  {
+    id: 8,
+    title: 'USD Bot',
+    description:
+      'Telegram bot to track Ukrsibbank USD to UAH exchange rate. Get real-time currency conversion data.',
+    technologies: ['Python', 'Aiogram'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/USD-Bot',
+  },
+  {
+    id: 9,
+    title: 'AliExpress Sale Finder',
+    description:
+      'Telegram bot that parses the AliExpress website to find and notify users about sales and deals.',
+    technologies: ['Python', 'Web Scraping'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/AliExpress-Sale-Finder',
+  },
+  {
+    id: 10,
+    title: 'Joke Bot',
+    description:
+      'Simple Telegram bot for sharing and managing jokes.',
+    technologies: ['Python', 'Aiogram'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/Joke-Bot',
   },
 ];
 
@@ -242,14 +225,12 @@ export const experience: Experience[] = [
 
 export const contributions: Contribution[] = [
   {
-    organization: 'z0team',
-    position: 'Co-Owner',
-    summary: 'Co-Owner and z0team developer. Fell in love with programming and DevOps.',
-    url: 'https://github.com/z0team',
+    organization: 'Pocket Poster',
+    position: 'Creator & Maintainer',
+    summary: 'Custom PosterBoard Wallpapers for iOS. Popular iOS project with multiple stars and active community support.',
+    url: 'https://github.com/Mak5er/Pocket-Poster',
     projects: [
-      { name: 'z0music', link: 'https://github.com/z0team/z0music', status: 'Active' },
-      { name: 'LinkSky', link: 'https://github.com/z0team/LinkSky', status: 'Active' },
-      { name: 'z0team', link: 'https://github.com/z0team', status: 'In Development' },
+      { name: 'Pocket Poster', link: 'https://github.com/Mak5er/Pocket-Poster', status: 'Active' },
     ],
   },
 ];
