@@ -77,6 +77,7 @@ export const skills: Skill[] = [
   { name: 'Git', category: 'tools', level: 88 },
   { name: 'Bash', category: 'tools', level: 70 },
   { name: 'Powershell', category: 'tools', level: 65 },
+  { name: 'Swift', category: 'language', level: 60 },
 ];
 
 export const github = {
@@ -84,6 +85,7 @@ export const github = {
   sources: ['mak5er', 'z0team'],
   // Repos to surface as featured cards in projects, in this exact order.
   featuredRepos: [
+    'mak5er/portfolio-v2',
     'mak5er/Downloader-Bot',
     'z0team/z0music',
     'z0team/LinkSky',
@@ -91,6 +93,7 @@ export const github = {
   ],
   // Demo / live links keyed by full_name (lowercased).
   demoLinks: {
+    'mak5er/portfolio-v2': 'https://www.mak5er.com',
     'mak5er/downloader-bot': 'https://t.me/MaxLoadBot',
     'z0team/z0music': 'https://t.me/z0MusicBot',
     'z0team/linksky': 'https://linksky.qzz.io',
@@ -98,6 +101,8 @@ export const github = {
   } as Record<string, string>,
   // Optional description override per repo (full_name lowercased).
   descriptionOverrides: {
+    'mak5er/portfolio-v2':
+      'Portfolio website v2 with terminal aesthetic, command palette, and perfect Lighthouse scores. Built with React, TypeScript, Vite, and Tailwind CSS.',
     'mak5er/downloader-bot':
       'Telegram bot for downloading media from social platforms. Built around aiogram + yt-dlp, deployed in Docker.',
     'z0team/z0music':
@@ -112,6 +117,17 @@ export const github = {
 export const projects: Project[] = [
   {
     id: 1,
+    title: 'Portfolio v2',
+    description:
+      'Portfolio website with terminal aesthetic, command palette (Cmd+K), and perfect Lighthouse scores. Progressive Web App with offline support.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'PWA'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/portfolio-v2',
+    demo: 'https://www.mak5er.com',
+    featured: true,
+  },
+  {
+    id: 2,
     title: 'Downloader Bot',
     description:
       'Telegram bot for downloading media from social platforms. Handles a lot of sources, deployed in Docker.',
@@ -122,7 +138,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     title: 'z0music',
     description:
       'Telegram music downloader bot focused on YouTube audio delivery. Built around yt-dlp and aiogram.',
@@ -133,7 +149,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: 'LinkSky',
     description:
       'Web app for personalized landing pages with links to social media profiles. Multi-tenant, themable.',
@@ -144,7 +160,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 4,
+    id: 5,
     title: 'Layout Changer',
     description:
       'Web tool for converting text between English QWERTY and Ukrainian YCUKEN keyboard layouts.',
@@ -152,6 +168,51 @@ export const projects: Project[] = [
     status: 'Active',
     github: 'https://github.com/Mak5er/layout-changer',
     demo: 'https://layout.mak5er.com/',
+  },
+  {
+    id: 6,
+    title: 'AiblushiBot',
+    description:
+      'Telegram bot designed to help manage dehydration processes, track working sessions, and generate reports for small business operations.',
+    technologies: ['Python', 'Aiogram', 'SQLite'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/AiblushiBot',
+  },
+  {
+    id: 7,
+    title: 'Pocket Poster',
+    description:
+      'Custom PosterBoard Wallpapers for iOS 26-27.0b4. iOS app for creating and managing custom wallpapers.',
+    technologies: ['Swift', 'iOS'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/Pocket-Poster',
+  },
+  {
+    id: 8,
+    title: 'Anekdoty',
+    description:
+      'Jokes website built with ReactJS and FastAPI. Collection of funny jokes with a clean modern interface.',
+    technologies: ['React', 'JavaScript', 'FastAPI', 'Python'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/anekdoty',
+  },
+  {
+    id: 9,
+    title: 'Multi-Bot',
+    description:
+      'Multitool Bot in Telegram with various utilities and features for productivity.',
+    technologies: ['Python', 'Aiogram'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/Multi-Bot',
+  },
+  {
+    id: 10,
+    title: 'EmojiEncode',
+    description:
+      'Hide a message in an emoji! This bot allows you to encode a hidden message into an emoji.',
+    technologies: ['Python', 'Aiogram'],
+    status: 'Active',
+    github: 'https://github.com/Mak5er/EmojiEncode',
   },
 ];
 
