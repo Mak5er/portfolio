@@ -98,7 +98,7 @@ export const github = {
     'mak5er/downloader-bot':
       'Telegram bot for downloading media from social platforms. Built around aiogram + yt-dlp, deployed in Docker.',
     'mak5er/pocket-poster':
-      'Custom PosterBoard Wallpapers for iOS 26-27. Create beautiful personalized wallpapers for your iPhone.',
+      'Custom PosterBoard Wallpapers for iOS 26-27. Create beautiful personalized wallpapers for your iPhone. ⭐ Popular iOS project.',
   } as Record<string, string>,
 };
 
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     id: 2,
     title: 'Pocket Poster',
     description:
-      'Custom PosterBoard Wallpapers for iOS 26-27.0b4. Create beautiful personalized wallpapers with ease.',
+      'Custom PosterBoard Wallpapers for iOS 26-27.0b4. Popular iOS project that gathered multiple stars. Create beautiful personalized wallpapers.',
     technologies: ['Swift', 'iOS'],
     status: 'Active',
     github: 'https://github.com/Mak5er/Pocket-Poster',
@@ -226,7 +226,7 @@ export const experience: Experience[] = [
 export const contributions: Contribution[] = [
   {
     organization: 'Pocket Poster',
-    position: 'Creator & Maintainer',
+    position: 'Contributor',
     summary: 'Custom PosterBoard Wallpapers for iOS. Popular iOS project with multiple stars and active community support.',
     url: 'https://github.com/Mak5er/Pocket-Poster',
     projects: [
