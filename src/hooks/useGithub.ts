@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { github } from '@/data/content';
 
 export type GhRepo = {
   id: number;
@@ -43,7 +44,7 @@ type State<T> = {
 };
 
 const TTL_MS = 60 * 60 * 1000; // 1 hour
-const KEY_PREFIX = 'gh-cache::';
+const KEY_PREFIX = 'gh-cache-v2::';
 
 function readCache<T>(key: string): T | null {
   try {
@@ -96,7 +97,14 @@ export function useGithubRepos(users: string[]) {
             ).catch(() => [] as GhRepo[])
           )
         );
-        const merged = lists.flat().filter((r) => !r.fork && !r.archived);
+        const featuredSet = new Set(github.featuredRepos.map((f) => f.toLowerCase()));
+        const merged = lists
+          .flat()
+          .filter(
+            (r) =>
+              (!r.fork || featuredSet.has(r.full_name.toLowerCase())) &&
+              !r.archived
+          );
         const seen = new Set<number>();
         const deduped: GhRepo[] = [];
         for (const r of merged) {

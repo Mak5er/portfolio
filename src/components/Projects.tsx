@@ -118,7 +118,7 @@ export function Projects() {
                     onClick={() => setShowAll((v) => !v)}
                     className="mono inline-flex items-center gap-2 border border-ink-400 px-4 py-2 text-2xs text-ink-50 transition-colors hover:border-ink-100 hover:bg-ink-800"
                   >
-                    {showAll ? '▴ collapse' : `▾ show all ${filteredOthers.length}`}
+                    {showAll ? '▴ collapse' : '▾ show all'}
                   </button>
                 </div>
               )}
